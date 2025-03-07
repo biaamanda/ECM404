@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Enunciado - Faça um programa que calcula a associação em paralelo
- * de dois resistores R1 e R2 fornecidos pelo usuário via teclado e retorna seu valor com duas casas decimais.
- * O programa deverá solicitar valores e calcular a resistência equivalente até
- * que o usuário entre com um valor para alguma das resistências igual a 0
+/* Enunciado - Faï¿½a um programa que calcula a associaï¿½ï¿½o em paralelo
+ * de dois resistores R1 e R2 fornecidos pelo usuï¿½rio via teclado e retorna seu valor com duas casas decimais.
+ * O programa deverï¿½ solicitar valores e calcular a resistï¿½ncia equivalente atï¿½
+ * que o usuï¿½rio entre com um valor para alguma das resistï¿½ncias igual a 0
  *
  * Exemplos:
  *
@@ -14,10 +14,29 @@
  *
  * Digite um valor para R1: 0
  * Digite um valor para R2: 100
- * Finalizando o programa!
+ * Finalizandoï¿½oï¿½programa!
 */
 
 int main()
 {
-    return 0;
-}
+    float R1, R2, Req;
+      do{
+      printf("Digite um valor para R1: ");
+      scanf("%f", &R1);
+      printf("Digite um valor para R2: ");
+      scanf("%f", &R2);
+    
+    if(R1 > 0 && R2 > 0){
+      Req = (R1*R2)/(R1+R2);
+       printf("%.2f \n", Req);
+    }
+        else{
+          continue;
+        }
+      }
+    while (R1 > 0 && R2 > 0);
+    
+    printf("Finalizando o programa!");
+    
+      return 0;
+    }

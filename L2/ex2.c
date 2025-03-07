@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Enunciado - Faça um programa que receba um número inteiro digitado pelo
- * usuário e retorna se o número é par ou ímpar.
+/* Enunciado - Faï¿½a um programa que receba um nï¿½mero inteiro digitado pelo
+ * usuï¿½rio e retorna se o nï¿½mero ï¿½ par ou ï¿½mpar.
  *
  * Exemplos:
  *
@@ -15,5 +15,14 @@
 
 int main ()
 {
+  int num;
+  printf("Digite um numero: ");
+  scanf("%i", &num);
+  if (num % 2 == 0){
+    printf("Par");
+  }
+  else{
+    printf("Impar");
+  }
   return 0;
 }

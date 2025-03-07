@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Enunciado - Faça um programa que receba um número inteiro e, a seguir,
- * exibe todos os seus possíveis divisores separados apenas por um espaço.
+/* Enunciado - Faï¿½a um programa que receba um nï¿½mero inteiro e, a seguir,
+ * exibe todos os seus possï¿½veis divisores separados apenas por um espaï¿½o.
  *
  * Exemplos:
  *
@@ -15,5 +15,17 @@
 
 int main()
 {
+    int num, i;
+    printf("Digite um numero: ");
+    scanf("%i", &num);
+
+    for(i=1; 1<=num; i++){
+        int result = num % i;
+
+        if (result == 0){
+            printf("%i ", i);
+        };
+
+    }
     return 0;
 }

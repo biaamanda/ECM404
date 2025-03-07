@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* Enunciado - Faça um programa que leia duas notas de um aluno em uma
- * única linha, separando cada valor com uma vírgula. Verifique se as notas
- * são válidas e, caso sejam exiba a média do aluno na tela. Para que a nota
- * seja válida, ela deve estar entre 0.0 e 10.0. Caso alguma das notas não seja
- * válida, o programa deve informar o usuário e encerrar sua operação.
+/* Enunciado - Faï¿½a um programa que leia duas notas de um aluno em uma
+ * ï¿½nica linha, separando cada valor com uma vï¿½rgula. Verifique se as notas
+ * sï¿½o vï¿½lidas e, caso sejam exiba a mï¿½dia do aluno na tela. Para que a nota
+ * seja vï¿½lida, ela deve estar entre 0.0 e 10.0. Caso alguma das notas nï¿½o seja
+ * vï¿½lida, o programa deve informar o usuï¿½rio e encerrar sua operaï¿½ï¿½o.
  *
  * Exemplos:
  *
@@ -21,5 +21,15 @@
 
 int main()
 {
+    float nota1, nota2;
+    printf("Notas: ");
+    scanf("%f, %f", &nota1, &nota2);
+
+    if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10){
+        printf("Nota invalida. Deve ser entre 0.0 e 10.0");
+    }
+    else{
+        printf("%.2f", (nota1 + nota2) / 2);
+    }
     return 0;
 }
