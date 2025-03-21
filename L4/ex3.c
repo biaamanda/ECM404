@@ -25,35 +25,29 @@
 #define ARRAY_MAX 3 // Valor m�ximo para o tamanho do array. N�o modifique.
 
 /* Prot�tipos */
-int produto_escalar(int array[], int array2[]);
+int ScalarProduct(int firstArray[], int secondArray[])
+{
+    int scalarProduct = 0;
+
+    for (int i = 0; i < ARRAY_MAX; i++)
+    {
+        scalarProduct += firstArray[i] * secondArray[i];
+    }
+
+    return scalarProduct;
+}
 
 int main()
 {
-    int array[ARRAY_MAX];
-    int array2[ARRAY_MAX];
-    int i;
-
-    for (i = 0; i < ARRAY_MAX; i++) {
-        printf("Digite o primeiro array: ", i);
-        scanf("%i", &array[i]);
+    int firstArray[ARRAY_MAX], secondArray[ARRAY_MAX];
+    
+    printf("Digite o primeiro array: ");
+    scanf("%i %i %i", &firstArray[0], &firstArray[1], &firstArray[2]);
+    
+    printf("Digite o segundo array: ");
+    scanf("%i %i %i", &secondArray[0], &secondArray[1], &secondArray[2]);
+    
+    printf("[%i %i %i] . ", firstArray[0], firstArray[1], firstArray[2]);
+    printf("[%i %i %i] = ", secondArray[0], secondArray[1], secondArray[2]);
+    printf("%i", ScalarProduct(firstArray, secondArray));
     }
-
-    for (i = 0; i < ARRAY_MAX; i++) {
-    printf("Digite o segundo array: ", i);
-    scanf("%i", &array2[i]);
-    }
-
-    int produto = produto_escalar(array, array2);
-    printf("%i", produto);
-    return 0;
-}
-
-/* Implementa��o das Fun��es */
-int produto_escalar(int array[], int array2[]) {
-    int produto = 0;
-
-    for (int i = 0; i < ARRAY_MAX; i ++) {
-        produto += array[i] * array2[i];
-    }
-return produto;
-}
