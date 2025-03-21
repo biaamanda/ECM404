@@ -52,7 +52,7 @@ int main() {
     int rows, columns, is_error = 0;
 
     for (int current_row = 0; current_row < ARRAY_MAX; current_row++) {
-        printf("Linha %i: ", current_row, i++);
+        printf("Linha %1: ", current_row);
         for(int current_column = 0; current_column < ARRAY_MAX; current_column++) {
             scanf("%i", &matrix[current_row][current_column]);
 
