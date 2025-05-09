@@ -18,6 +18,22 @@
 /* Prot�tipos */
 
 int main (int argc, char *argv[]){
+  char string[MAX];
+  int i, len;
+
+  printf("Digite uma string: ");
+  fgets(string, 100, stdin);
+
+  len = strlen(string);
+  if (string[len - 1] == '\n') {
+      string[len - 1] = '\0';
+      len--;
+  }
+
+  for (i = len - 1; i >= 0; i--) {
+      putchar(string[i]);
+  }
+  putchar('\n');
   
   return 0;
 }
