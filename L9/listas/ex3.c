@@ -41,7 +41,7 @@ int main() {
     printf("Nova lista com produtos pares:\n");
     
     for (int i = 0; i < newSize; i++) {
-        printf("Code: %d; Nome: %s; Valor: %.2f; Estoque: %d\n", newList[i].product, newList[i].productName, newList[i].value, newList[i].stockQuantity);
+        printf("Code: %d\n Produto: %s\n Valor: %.2f\n Estoque: %d\n", newList[i].product, newList[i].productName, newList[i].value, newList[i].stockQuantity);
     }
 
     return 0;
