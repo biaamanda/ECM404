@@ -2,9 +2,8 @@
 #include <stdlib.h>
 #include "grafo.h"
 
-// Implemente as funções da biblioteca de grafos (grafo.h e grafo.c).
-// Utilize o programa principal abaixo para ir testando cada uma das funções
-// criadas. (descomente apenas o que for testar)
+// Implemente as funcoes da biblioteca de grafos (grafo.h e grafo.c).
+// Utilize o programa principal abaixo para ir testando cada uma das funcoes criadas. (descomente apenas o que for testar)
 
 int main() {
     int n, dig, i, j;

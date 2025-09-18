@@ -23,8 +23,7 @@ void ExibirArestas (Grafo g)
 void ExibirGrafo (Grafo g)
 {
     int i, j;
-    // Troque por CLS se estiver usando Windows
-    system("clear");
+    system("CLS");
     printf ("Numero de vertices do %s: %i\n", g.digrafo==0?"GRAFO":"DIGRAFO",g.nVertices);
     for (i=0; i <g.nVertices; i++)
     {
