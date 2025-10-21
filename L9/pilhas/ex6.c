@@ -25,31 +25,30 @@ int full(Stack *s) {
     return s->top == MAX - 1;
 }
 
-int empty{
-    return p->top == -1;
+int empty (Stack *s){
+    return s->top == -1;
 }
 
-void push {
+void push (Stack *s, int value){
     if(!full(s)){
-        return p->items[++s->top] = value;
+        s->items[++s->top] = value;
     }
 }
 
-int pop{
+int pop (Stack *s) {
     if(!empty(s)){
-        return p->items[p->top--1];
+        return s->items[s->top--];
     }
     return -1;
 }
 
-
 int main(){
-    int num;
+    int number;
 
     Stack s;
     boot(&s);
 
-    printf(Digite um numero entre 0 e 255: );
+    printf("Digite um numero entre 0 e 255: ");
     scanf("%d", &number);
 
     int temp = number;
@@ -64,10 +63,12 @@ int main(){
         push(&s, 0);
     }
 
-    printf("Representacao binaria: ", number)
-
-    while(!empty(&s)){
+    printf("Representacao binaria: ", number);
+    
+    while (!empty(&s)) {
         printf("%d", pop(&s));
     }
+    printf("\n");
+
     return 0;
 }
