@@ -3,31 +3,30 @@
 
 /* Enunciado:
  *
- * Elabore um programa que leia dois numero inteiros
- * troque os valores entre as vari�veis e os imprima
+ * Elabore um programa que leia dois numero inteiros troque os valores entre as vari�veis e os imprima
  *
  * Ex:
  *      Digite um numero: 5
  *      Digite um numero: 7
  *      7 5
- *
  */
 
 int main (int argc, char *argv[])
 {
-  int first_number, second_number;
+  int firstNumber, secondNumber;
   printf("Digite um numero: ");
-  // Leitura do numero
-  scanf("%i", &first_number);
+  scanf("%i", &firstNumber);
+
   printf("Digite um numero: ");
-  // Resto do seu codigo
-  scanf("%i",&second_number);
+  scanf("%i",&secondNumber);
 
-  int temp = first_number;
-  first_number = second_number;
-  second_number = temp;
+  // int temp = firstNumber;
+  // firstNumber = secondNumber;
+  // secondNumber = temp;
 
-  print("%i %i", first_number, second_number);
+  // printf("%i %i", firstNumber, secondNumber);
+  
+  printf("%i %i", secondNumber, firstNumber);
 
   return 0;
 }

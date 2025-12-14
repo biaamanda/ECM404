@@ -9,7 +9,6 @@
  *
  * S: **Req_Serie** P: **Req_Paralelo**
  *
- *
  * Ex:
  *      R1: 3
  *      R2: 3
